@@ -1,0 +1,38 @@
+{
+  "name": "@skillxtube/learning-engine",
+  "version": "0.1.0",
+  "description": "A provider-agnostic TypeScript library for turning source material into evidence-grounded learning packs.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "learning",
+    "edtech",
+    "ai",
+    "quiz",
+    "typescript",
+    "open-source"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vitest": "^5.0.5"
+  }
+}
